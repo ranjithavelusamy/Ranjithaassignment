@@ -1,0 +1,158 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* variable declarations */
+:root {
+    --primary: hsl(327, 87%, 26%);
+    --primary-light: #db9ecf93;
+    --secondary: #170234;
+    --secondary-light: #986ad8;
+}
+
+/*Remove browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    height: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 70px;
+    height: 70px;
+}
+
+/* common styles */
+.btn {
+    color: black;
+    display: inline-block;
+    background-color: #170234;
+    border: 6px solid #986ad8;
+    padding: 10px 18px;
+    transition: 300ms;
+}
+
+.btn:hover {
+    background-color: #087b5a;
+    border: 6px solid red;
+}
+
+header {
+    background-color: darkred;
+}
+
+.header-content {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    display: flex;
+    background-color: var(--secondary);
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-link a {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.nav-link li::after {
+    content: '';
+    display: block;
+    background-color: var(--primary);
+    height: 2px;
+    width: 0%;
+    transform: scaleX(0);
+    transition: width 300ms;
+}
+
+.nav-link li:hover::after {
+    width: 100%;
+    transform: scaleX(1);
+}
+
+.text-center {
+    color: #170234;
+}
+
+.text-center h1 {
+    margin: 1.2rem;
+}
+
+.text-center {
+    height: 180px;
+    width: 200px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.headline {
+    background-color: black;
+}
+
+.register-btn {
+    color: black;
+    background-color: #bb1299;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.layoutcontainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footer {
+    text-align: center;
+    background-color: #170234;
+    color: white;
+    padding: 20px;
+}
+
+.main-background {
+    background: url(./pexels-pixabay-301926.jpg);
+    background-size: cover;
+    background-position: right;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header_pagetitle {
+    text-align: center;
+    font-weight: 600;
+}

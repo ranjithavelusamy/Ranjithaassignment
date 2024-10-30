@@ -1,0 +1,56 @@
+body {
+    background-color: darkred;
+}
+
+.layout_container {
+    display: flex;
+    flex-direction: row;
+    min-height: vh;
+}
+
+.nav-link li::after {
+    content: '';
+    display: block;
+    background-color: var(--primary);
+    height: 2px;
+    width: 0%;
+    transform: scaleX(0);
+    transition: width 300ms;
+}
+
+.textarea {
+    display: block;
+    width: 50%;
+    margin-bottom: 1rem;
+    padding: 6px;
+    border-bottom: 1px solid #000201d0;
+
+}
+input:focus,
+textarea:focus {
+    border: none;
+    outline: none;
+    background-color: #e1dfe8;
+}
+
+.mainForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-cu {
+    width: 10rem;
+}
+
+.form input {
+    width: 20rem;
+}
+
+.footer {
+    text-align: center;
+    background-color: #170234;
+    color: white;
+    padding: 5px;
+    font-weight: 600;
+    font-style: bold;
+}
