@@ -95,6 +95,11 @@ header {
     transform: scaleX(1);
 }
 
+.nav-link__activated {
+    border: 2px solid white;
+    padding: 0 1rem;
+    
+}
 .text-center {
     color: #170234;
 }
@@ -139,7 +144,7 @@ header {
 }
 
 .main-background {
-    background: url(./pexels-pixabay-301926.jpg);
+    background: url("../images/pexels-pixabay-301926.jpg");
     background-size: cover;
     background-position: right;
 }
